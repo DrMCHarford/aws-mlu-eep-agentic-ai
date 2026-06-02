@@ -19,9 +19,9 @@ The program is organized into five progressive modules:
 |--------|-------|-------------|
 | 1 | **Agentic AI Essentials** | Core concepts and foundations of Agentic AI |
 | 2 | **Agentic AI Applications** | Building practical AI agent applications using tools like Strands Agents SDK, Amazon Bedrock, and guardrails |
-| 3 | **Multi-agent Collaboration** | Designing systems where multiple AI agents work together (To be delived Q3 2026) |
-| 4 | **Agentic RAG** | Retrieval-Augmented Generation in agentic architectures (To be delived Q3 2026) |
-| 5 | **Building with Agentic AI** | End-to-end project building with agentic AI tools and workflows (To be delived Q4 2026) |
+| 3 | **Multi-agent Collaboration** | Designing systems where multiple AI agents work together (To be delivered Q3 2026) |
+| 4 | **Agentic RAG** | Retrieval-Augmented Generation in agentic architectures (To be deliveredd Q3 2026) |
+| 5 | **Building with Agentic AI** | End-to-end project building with agentic AI tools and workflows (To be delivered Q4 2026) |
 
 ## Repository Structure
 
