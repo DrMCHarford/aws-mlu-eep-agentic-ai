@@ -26,8 +26,17 @@ def compare_all_systems(query: str, test_plain_llm, tool_calling_system, strands
     except Exception as e:
         agent_response = f"Error: {str(e)}"
     
+    # Extract text from agent response (handles both Strands result objects and plain strings)
+    if isinstance(agent_response, str):
+        agent_text = agent_response
+    else:
+        try:
+            agent_text = agent_response.message['content'][0]['text']
+        except (AttributeError, KeyError, IndexError, TypeError):
+            agent_text = str(agent_response)
+
     # Create and display the comparison table
-    table_html = create_comparison_table(query, plain_response, tool_response, agent_response.message['content'][0]['text'])
+    table_html = create_comparison_table(query, plain_response, tool_response, agent_text)
     display(HTML(table_html))
     
     print("✅ Comparison complete!\n")
